@@ -1,5 +1,5 @@
 nano /usr/bin/mmsms.sh
-[code]
+'''
 #!/bin/sh
 
 # Ambil daftar SMS
@@ -11,7 +11,7 @@ for sms_id in $sms_list; do
     mmcli -m 1 -s ${sms_id##*/}
     echo "-------------------------"
 done
-[/code]
+'''
 chmod +x /usr/bin/mmsms.sh
 echo 'alias mmsms="/usr/bin/mmsms.sh"' >> /etc/profile
 source /etc/profile
